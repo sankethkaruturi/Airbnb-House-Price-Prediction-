@@ -6,7 +6,7 @@
 
 With the aid of __machine learning__ and __data science__, it is possible to predict the prices of houses respectively. There are features such as __longitude__ and __latitude__ that help determine the prices along with other features such as neighborhood and the demand for the area. 
 
-<img src = "https://github.com/suhasmaddali/GIF-files/blob/main/homegif.gif" />
+<img src = "https://github.com/sankethkaruturi/Images/blob/a05b73163c0117d5dfad32dea3d7fd529e2d82f8/Project%20Thumbnails/Selling%20Real%20Estate%20GIF%20by%20Anchor%20Point.gif" />
 
 ## Metrics
 
@@ -32,67 +32,67 @@ In this section, we will **delve** into the data to uncover valuable insights an
 
 There are features such as **name** of the place along with other features such as **neighbourhood** and **room_type** that could be used to determine the overall price of the rooms. Total number of reviews can give us a good representation about the popularity of the place as compared to other rooms in the vicinity. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Data%20Image.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Data%20Image.png"/>
 
 Decision trees are valued for their **interpretability**, as they allow us to understand the importance of different features in predicting outcomes. After selecting the **best depth** for the tree, the resulting model indicates that the neighbourhood of Woodside was the most influential factor in determining housing prices. This was followed by the longitude and neighbourhood of Midland Beach features, which also had a significant impact on prices.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Data%20Description.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Data%20Description.png"/>
 
 The data below shows the total number of missing values present. It could be seen that there are missing values in the data for features such as 'last_review' and 'reviews_per_month' features. These features impact the performance of models if not treated before training them. Therefore, steps can be taken to ensure that these features are either imputed or removed. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Dataset%20Information.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Dataset%20Information.png"/>
 
 **Missingno** plots give a good understanding about the total missing values present in the data in the form of white strips (depends on color mapping). There are features that contain missing information such as 'last_review' and 'reviews_per_month'. Therefore, steps could be taken to ensure that these values are either removed or imputed. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Missingno%20plot.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Missingno%20plot.png"/>
 
 **KDE Plots** give a good idea about the distribution of values present in the data. In our case, we take a look at the distribution of price feature and it's density across different regions. A large amount of prices are concentrated in the region between **100 - 500** respectively. There can be some outliers as well as depicted in the diagram. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Prices%20distribution.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Prices%20distribution.png"/>
 
 The **majority** of the listings in the dataset comprise entire homes or apartments for hosting, while the number of shared rooms available is comparatively low. Private rooms are also available, but they constitute a smaller proportion of the listings in the dataset.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Room%20type%20count.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Room%20type%20count.png"/>
 
 This plot shows the **latitude** and **longitude** information about various locations used in the dataset. The data is taken from varions regions of New York. There are regions such as Brooklyn, Manhattan, Queens and others. More add could be added if the ML models are able to make predictions well on this dataset. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Location%20plot.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Location%20plot.png"/>
 
 For most properties, the monthly number of reviews is around **100**, with only a few houses having significantly more. This distribution is illustrated in the accompanying plot.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Reviews%20per%20month%20plot.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Reviews%20per%20month%20plot.png"/>
 
 The plot displays the **distribution** of housing prices across different regions in New York, with **Manhattan** having the highest concentration of houses, followed by **Brooklyn**. Conversely, there are relatively few houses in **Staten Island**. As a result, the model's predictive accuracy for houses in Staten Island may be lower compared to those in Manhattan due to the smaller sample size. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Neighborhood%20plots.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Neighborhood%20plots.png"/>
 
 Upon examining the overall distribution of housing prices across different regions, it becomes apparent that there are **outliers** in each category. These outliers have the potential to skew the results of **machine learning models** by introducing unexpected values. Therefore, it is recommended to remove these outliers from the dataset to improve the accuracy and reliability of the model's predictions.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Neighborhood%20prices%20plot.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Neighborhood%20prices%20plot.png"/>
 
 To optimize the performance of machine learning models, **hyperparameter tuning** is a crucial step. The accompanying plot displays the results of a decision tree regressor model trained using different values for the maximum depth hyperparameter. The graph illustrates the corresponding cross-validation error for each depth value tested. Notably, the model performs best with a maximum depth of 4, which results in the lowest cross-validation error.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/Decision%20Tree%20Hyperparameter%20tuning%20(Max%20depth).png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/Decision%20Tree%20Hyperparameter%20tuning%20(Max%20depth).png"/>
 
 Decision trees are renowned for their **interpretability**, allowing us to gain valuable insights into the factors affecting the target variable. After optimizing the **tree depth** and analyzing the tree structure, we observed that the 'neighborhood_Woodside' feature played a crucial role in determining house prices. Subsequently, the 'longitude' and 'neighborhood_Midland_Beach' features also emerged as significant factors influencing **property** values.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/DT%20Feature%20Importance.png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/DT%20Feature%20Importance.png"/>
 
 This plot shows the performance of the **decision tree regressor** and computes the **mean squared error** for various values of hyperparameter "Min samples leaves". As the number of Min samples leaves increases, there is also an increase in mean squared error which is undesirable. Steps can be taken to choose the most optimum value for minimum number of samples to reduce the overall cross-validation error. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/DT%20Hyperparameter%20tuning%20(Min%20samples%20leaves).png"/> 
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/DT%20Hyperparameter%20tuning%20(Min%20samples%20leaves).png"/> 
 
 Having recognized the importance of the **minimum number of samples** as a hyperparameter, we diligently conducted hyperparameter tuning by testing a broader range of values for this parameter. We then plotted the results to visualize the overall performance and gain a clearer understanding. Based on the analysis, setting the minimum number of samples to 200 yielded the lowest mean squared error (cross-validation error), indicating optimal performance for this particular hyperparameter.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/DT%20Hyperparameter%20tuning%20(Min%20samples%20split).png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/DT%20Hyperparameter%20tuning%20(Min%20samples%20split).png"/>
 
 Performing the same set of actions on **Random Forest Regressor**, we tend to see that with the increase in the number of estimators (trees), there is an improvement in the performance of the model on the cross-validation data. However, this can be computationally intensive as it can only be run in a sequence. 
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/RF%20Hyperparameter%20tuning%20(no.%20of%20estimator%20values).png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/RF%20Hyperparameter%20tuning%20(no.%20of%20estimator%20values).png"/>
 
 As the number of trees in the **Random Forest** increases, the mean squared error decreases. However, the decrease in the mean squared error with respect to the number of trees is minimal. Therefore, the best number of trees with relatively high performance is **50**.
 
-<img src = "https://github.com/suhasmaddali/Airbnb-Home-Prices-Prediction/blob/main/images/RF%20Hyperparameter%20tuning%20(no.%20of%20variables).png"/>
+<img src = "https://github.com/sankethkaruturi/Airbnb-House-Price-Prediction-/blob/45150f19b6003cf008d6a612f5fd3cdaf52c9fac/images/RF%20Hyperparameter%20tuning%20(no.%20of%20variables).png"/>
 
 ## Machine Learning Models
 
